@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kane's blog - 自製網路線</title>
+</head>
+
+<body><!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kane's blog - 自製網路線</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="index">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Kane'blog </a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">home</a></li>
+						
+						</ul>
+					</nav>
+				</header>
+				<!-- Banner -->
+				<section id="banner">
+
+					
+					<div class="inner">
+
+						<header>
+						
+							<h2>2017 Spring 網際內容管理</h2>
+						</header>
+						<p>40523119的課程網誌</p><br>
+						<ul class="icons">
+						<li><a href="https://www.facebook.com/Linjianan1104" class="icon circle fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/s40523119" class="icon circle fa-github " target="_blank"><span class="label">Github</span></a></li>
+						
+					</ul>
+						<footer>
+							<ul class="buttons vertical">
+								<li><a href="https://mde2a2.kmol.info/wcmg4/home" class="button fit scrolly" target="_blank">our fossil page</a></li>
+							</ul>
+						</footer>
+
+					</div>
+
+				</section>
+
+			
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<!-- Content -->
+								<div class="content">
+								  <section>
+										<header>
+		  									<h2><strong>在虛擬機中安裝Ubuntu</strong></h2>
+		  									<p>2017.04.19</p>
+									  	</header>
+									  		<section>
+									  			<p>今天教大家如何在虛擬機中安裝Ubuntu，文章中所使用的虛擬機是VirtualBox，這是一套由Oracle公司所開發的<font color="#FF0004">免費且中文化</font>的「虛擬機器(Virtual Machine) 」軟體，安裝VirtualBox之後，可以在你的電腦新增多部的虛擬機器（或稱「虛擬電腦」），在虛擬機器中可以安裝不同的作業系統，當然，也可以安裝任何的軟體，就好像在使用實體電腦一樣。
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			今天所需的工具如下:<br>
+									  			<a href="https://www.virtualbox.org/">VirtualBox虛擬機</a><br>
+												<a href="https://www.ubuntu-tw.org/modules/tinyd0/">Ubuntu安裝映像檔</a><br>
+												<font color="#EB2FE4">一顆學習的心(重要!!)</font>
+									  			</p>	
+									  		</section>
+									  		<section>
+									  			<p>
+									  			安裝說明:<br><br>
+
+									  			<font color="#03B0D4">Step 1:</font> 打開虛擬機後，點及左上角新增，並選擇專家模式。<br>
+												自訂名稱，類型選擇Linux，因為我的電腦是64位元版本，所以我選用的是64-bit，並設定記憶體大小(依實體主機規格決定)，並選擇"立即建立虛擬硬碟"。<br>
+									  			<img src="images/20170419/1.create a new virtual OS of Ubuntu1604.JPG"><br>
+
+
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 2:</font> 設定虛擬機要存放在哪裡，我選擇存放於非系統碟的磁碟區，並設定給予虛擬硬碟多少的大小(建議8GB以上)，硬碟類型選擇VHD(虛擬硬碟)。<br>
+									  			<img src="images/20170419/2.set path size type.JPG"><br>
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 3:</font>建立完畢後，點選你的虛擬機，並點擊左上角設定值，進入網路設定部分。<br>
+									  			<img src="images/20170419/3.Finish.JPG"><br>
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 4:</font>因為之後我想建置一個伺服器，我必須讓我的虛擬機網路位階與外部相同，所以我選擇橋接介面卡模式，又因為我使用的是教育單位網路，會綁定網路卡位址與IP，所以我將MAC位址更改成真實網路卡MAC位址，更改完成後按下OK。<font color="#FF0004">(一般使用者請用NAT模式，或直接跳過此步驟)</font><br><br>
+									  			<img src="images/20170419/4.change MAC address.JPG" width="50%"><img src="images/20170419/5.my MAC address.JPG"><br><br>
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 5:</font>接下來選擇你的虛擬機，並點擊左上角啟動，開啟你的虛擬機，接下來你會看以下畫面，因為目前你的虛擬硬碟是空的，你必須對它安裝系統(即是Ubuntu)，我們點擊右下方的小小資料夾。<br>
+
+									  			<img src="images/20170419/6.install OS to virtual disk when first time start.JPG">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 6:</font> 選擇先前下載的安裝映像檔，並按下開啟。<br>
+									  			<img src="images/20170419/7.choose you ubuntu iso.JPG">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 7:</font> 選取完成後，按下啟動。<br>
+									  			<img src="images/20170419/8.now let's go.JPG">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 8:</font> 選擇系統語言(本文選用英文)，並按下右邊的"Install Ubuntu"<br>
+									  			<img src="images/20170419/10.press install ubuntu.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 9:</font> 如果你想直接更新系統跟安裝一些基本軟體的話，你可以將他們勾選，但會延長安裝時間。<br>
+									  			<img src="images/20170419/11.if you want to update you OS or install softwares, you can check them.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 10:</font> 選擇第一個清除硬碟並安裝，反正我們是虛擬機，做壞都可以重來不用擔心。<br>
+									  			<img src="images/20170419/12.installation type.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 11:</font> 選擇你喜好的鍵盤語言(中文輸入法須另行設定，之後再說明)
+									  			。<br>
+									  			<img src="images/20170419/13.your keyboard.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 12:</font> 接下來設定你的電腦個人資訊，設定完成按下繼續。<br>
+									  			<img src="images/20170419/14.set your computer information.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 13:</font> Just Wait!! 等待安裝中...<br>
+									  			<img src="images/20170419/15.just wait!!.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 14:</font> 完成!! 重新開機!<br>
+									  			<img src="images/20170419/16.done.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 15:</font> 重新開機後，第一個畫面會請你輸入先前設定的個人密碼，打上密碼並按ENTER。<br>
+									  			<img src="images/20170419/17.your password.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			<font color="#03B0D4">Step 16:</font> 辛苦了!!你已經成功安裝UBUNTU!!<br>
+									  			<img src="images/20170419/18.enjoy it!!.jpg">
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>
+									  			下一篇會介紹在Ubuntu裡設定IPv4，讓學校(宿舍)網路能在虛擬機使用。
+									  			</p>
+									  		</section>
+									  		
+									  	
+											
+								  </section>
+									<ul class="buttons">
+							<li><a href="index.html" class="button special" style="margin-top: 1em">back</a></li>
+							
+						</ul>
+								</div>
+
+						</section>
+
+					
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-github" target="_blank"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>Design: <a href="https://www.facebook.com/Linjianan1104" target="_blank">林建安</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+</body>
+</html>
+
