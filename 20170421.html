@@ -2,7 +2,7 @@
 <body>
 <html>
 	<head>
-		<title>Kane's blog - 在Ubuntu中安裝nginx</title>
+		<title>Kane's blog - 啟動 Stunnel 與 Fossil SCM，失敗！！</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -58,70 +58,15 @@
 								<div class="content">
 								  <section>
 										<header>
-		  									<h2><strong>在Ubuntu中安裝nginx</strong></h2>
-		  									<p>2017.04.19</p>
+		  									<h2><strong>啟動 Stunnel 與 Fossil SCM，失敗！！</strong></h2>
+		  									<p>2017.04.21</p>
 									  	</header>
 									  		<section>
-									  			<p>Ubuntu安裝完成後，把網路設定好後，才能順利上網。
-									  			</p>
-									  		</section>  		
-									  		<section>
-									  			<p>
-									  			操作說明:<br><br>
-
-									  			<font color="#03B0D4">Step 1:</font> 點擊左方齒輪，並選擇「網路」，再點選項。<br>
-									  			<img src="images/20170420/install nginx/系統設定值_005.png"><br>
-
-
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>
-									  			<font color="#03B0D4">Step 2:</font> 確認你的MAC位址是否與當時申請宿舍網路的MAC位址一樣，再切換到IPv4的分頁。<br>
-									  			<img src="images/20170420/install nginx/編輯 Wired connection 1_006.png"><br>
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>
-									  			<font color="#03B0D4">Step 3:</font>再將學校給你的IP設定填入，按下儲存，就可以開始上網囉！<br>
-									  			<img src="images/20170420/install nginx/編輯 Wired connection 1_007.png"><br>
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>安裝NGINX說明：<br>
-									  			<font color="#03B0D4">Step 1:</font>打開終端機，並打「sudo apt install nginx 」，送出後會要求你輸入密碼，輸入後就開始安裝。
-									  			<br><br>
-									  			<img src="images/20170420/install nginx/kane@kane-desktop: ~_001.png"><br><br>
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>
-									  			<font color="#03B0D4">Step 2:</font>若沒有跳出錯誤，即是安裝成功。<br>
-
-									  			<img src="images/20170420/install nginx/kane@kane-desktop: ~_002.png">
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>
-									  			<font color="#03B0D4">Step 3:</font> 接下來啟動NGINX伺服器，鍵入「service nginx start」或是「sudo /etc/init.d/nginx start」都可以啟動伺服。<br>
-									  			<img src="images/20170420/install nginx/kane@kane-desktop: ~_003.png">
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>
-									  			<font color="#03B0D4">Step 4:</font> 打開瀏覽器，輸入 https://localhost ，看見welcome to nginx ，就代表成功囉！<br>
-									  			<img src="images/20170420/install nginx/Welcome to nginx! - Google Chrome_004.png">
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>
-									  			下一篇文章介紹如何用 Stunnel 建立 Fossil SCM Server。
-									  			</p>
-									  		</section>
-									  		
-									  		
-									  	
-											
+									  			<p>在最後設定HTTPS完成後，stunnel 始終無法取得port 443，透過指令查詢也沒有其他軟體佔用，上網嘗試尋找答案，發現port小於1024，都是ROOT使用，嘗試更換其他port也無效，用盡網路上所有方法都失敗，只好等待老師救援。
+									  			</p><br>
+									  			<img src="images/20170421/001.png"><br>
+									  			<img src="images/20170421/003.png">
+									  		</section>  											  										  											  											  												
 								  </section>
 									<ul class="buttons">
 							<li><a href="index.html" class="button special" style="margin-top: 1em">back</a></li>

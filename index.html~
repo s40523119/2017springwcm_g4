@@ -63,6 +63,25 @@
 							<header class="major">
 								<h2> <strong>BLOG</strong></h2>
 							</header>
+								<!-- 4/21 -->
+							<div class="content">
+									<section>
+										<header>
+    							<ul class="dates">
+	    							<li>
+											<span class="date">4月<strong>21日</strong></span>
+											<h2><a href="20170420.html"><strong>啟動 Stunnel 與 Fossil SCM，失敗！！</strong></a></h2>
+											<p>在最後設定HTTPS完成後，stunnel 始終無法取得port 443，透.....</p>
+											<ul class="buttons">
+											<a href="20170420.html" class="button" style="margin-top: 1em">
+											閱讀更多
+											</a>
+									</li>
+							
+								</ul>	
+									</section>															  
+								</div>
+
 							<!-- 4/20 -->
 							<div class="content">
 									<section>
@@ -73,7 +92,7 @@
 											<h2><a href="20170420.html"><strong>在Ubuntu中安裝nginx</strong></a></h2>
 											<p>Ubuntu安裝完成後，把網路設定好後，才能順利上網.....</p>
 											<ul class="buttons">
-											<a href="20170419.html" class="button" style="margin-top: 1em">
+											<a href="20170420.html" class="button" style="margin-top: 1em">
 											閱讀更多
 											</a>
 									</li>
