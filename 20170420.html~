@@ -2,8 +2,8 @@
 <body>
 <html>
 	<head>
-		<title>Kane's blog - 在虛擬機中安裝Ubuntu</title>
-		<meta charset="utf-8" /> 
+		<title>Kane's blog - 在Ubuntu中安裝nginx</title>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,7 +31,7 @@
 
 						<header>
 						
-							<h2>2017 Spring 網際內容管理</h2> 
+							<h2>2017 Spring 網際內容管理</h2>
 						</header>
 						<p>40523119的課程網誌</p><br>
 						<ul class="icons">
@@ -58,60 +58,52 @@
 								<div class="content">
 								  <section>
 										<header>
-		  									<h2><strong>在虛擬機中安裝Ubuntu</strong></h2>
+		  									<h2><strong>在Ubuntu中安裝nginx</strong></h2>
 		  									<p>2017.04.19</p>
 									  	</header>
 									  		<section>
-									  			<p>今天教大家如何在虛擬機中安裝Ubuntu，文章中所使用的虛擬機是VirtualBox，這是一套由Oracle公司所開發的<font color="#FF0004">免費且中文化</font>的「虛擬機器(Virtual Machine) 」軟體，安裝VirtualBox之後，可以在你的電腦新增多部的虛擬機器（或稱「虛擬電腦」），在虛擬機器中可以安裝不同的作業系統，當然，也可以安裝任何的軟體，就好像在使用實體電腦一樣。
+									  			<p>Ubuntu安裝完成後，把網路設定好後，才能順利上網。
 									  			</p>
-									  		</section>
+									  		</section>  		
 									  		<section>
 									  			<p>
-									  			今天所需的工具如下:<br>
-									  			<a href="https://www.virtualbox.org/">VirtualBox虛擬機</a><br>
-												<a href="https://www.ubuntu-tw.org/modules/tinyd0/">Ubuntu安裝映像檔</a><br>
-												<font color="#EB2FE4">一顆學習的心(重要!!)</font>
-									  			</p>	
-									  		</section>
-									  		<section>
-									  			<p>
-									  			安裝說明:<br><br>
+									  			操作說明:<br><br>
 
-									  			<font color="#03B0D4">Step 1:</font> 打開虛擬機後，點擊左上角新增，並選擇專家模式。<br>
-												自訂名稱，類型選擇Linux，因為我的電腦是64位元版本，所以我選用的是64-bit，並設定記憶體大小(依實體主機規格決定)，並選擇"立即建立虛擬硬碟"。<br>
-									  			<img src="images/20170419/1.create a new virtual OS of Ubuntu1604.JPG"><br>
+									  			<font color="#03B0D4">Step 1:</font> 點擊左方齒輪，並選擇「網路」，再點選項。<br>
+									  			<img src="images/20170420/install nginx/系統設定值_005.png"><br>
 
 
 									  			</p>
 									  		</section>
 									  		<section>
 									  			<p>
-									  			<font color="#03B0D4">Step 2:</font> 設定虛擬機要存放在哪裡，我選擇存放於非系統碟的磁碟區，並設定給予虛擬硬碟多少的大小(建議8GB以上)，硬碟類型選擇VHD(虛擬硬碟)。<br>
-									  			<img src="images/20170419/2.set path size type.JPG"><br>
+									  			<font color="#03B0D4">Step 2:</font> 確認你的MAC位址是否與當時申請宿舍網路的MAC位址一樣，再切換到IPv4的分頁。<br>
+									  			<img src="images/20170420/install nginx/編輯 Wired connection 1_006.png"><br>
 									  			</p>
 									  		</section>
 									  		<section>
 									  			<p>
-									  			<font color="#03B0D4">Step 3:</font>建立完畢後，點選你的虛擬機，並點擊左上角設定值，進入網路設定部分。<br>
-									  			<img src="images/20170419/3.Finish.JPG"><br>
+									  			<font color="#03B0D4">Step 3:</font>再將學校給你的IP設定填入，按下儲存，就可以開始上網囉！<br>
+									  			<img src="images/20170420/install nginx/編輯 Wired connection 1_007.png"><br>
+									  			</p>
+									  		</section>
+									  		<section>
+									  			<p>安裝NGINX說明：<br>
+									  			<font color="#03B0D4">Step 1:</font>打開終端機，並打「sudo apt install nginx 」，送出後會要求你輸入密碼，輸入後就開始安裝。
+									  			<br><br>
+									  			<img src="images/20170420/install nginx/kane@kane-desktop: ~_001.png"><br><br>
 									  			</p>
 									  		</section>
 									  		<section>
 									  			<p>
-									  			<font color="#03B0D4">Step 4:</font>因為之後我想建置一個伺服器，我必須讓我的虛擬機網路位階與外部相同，所以我選擇橋接介面卡模式，又因為我使用的是教育單位網路，會綁定網路卡位址與IP，所以我將MAC位址更改成真實網路卡MAC位址，更改完成後按下OK。<font color="#FF0004">(一般使用者請用NAT模式，或直接跳過此步驟)</font><br><br>
-									  			<img src="images/20170419/4.change MAC address.JPG" width="50%"><img src="images/20170419/5.my MAC address.JPG"><br><br>
-									  			</p>
-									  		</section>
-									  		<section>
-									  			<p>
-									  			<font color="#03B0D4">Step 5:</font>接下來選擇你的虛擬機，並點擊左上角啟動，開啟你的虛擬機，接下來你會看以下畫面，因為目前你的虛擬硬碟是空的，你必須對它安裝系統(即是Ubuntu)，我們點擊右下方的小小資料夾。<br>
+									  			<font color="#03B0D4">Step 2:</font>若沒有跳出錯誤，即是安裝成功。<br>
 
-									  			<img src="images/20170419/6.install OS to virtual disk when first time start.JPG">
+									  			<img src="images/20170420/install nginx/kane@kane-desktop: ~_002.png">
 									  			</p>
 									  		</section>
 									  		<section>
 									  			<p>
-									  			<font color="#03B0D4">Step 6:</font> 選擇先前下載的安裝映像檔，並按下開啟。<br>
+									  			<font color="#03B0D4">Step 3:</font> 接下來啟動NGINX伺服器，鍵入「service nginx start」或是「sudo /etc/init.d/nginx start」都可以啟動伺服。<br>
 									  			<img src="images/20170419/7.choose you ubuntu iso.JPG">
 									  			</p>
 									  		</section>
@@ -178,7 +170,7 @@
 									  		</section>
 									  		<section>
 									  			<p>
-									  			下一篇會介紹在Ubuntu裡設定IPv4，讓學校(宿舍)網路能在虛擬機使用。
+									  			下一篇會介紹在Ubuntu裡設定IPv4，讓學校(宿舍)網路能在虛擬機使用，並安裝NGINX。。
 									  			</p>
 									  		</section>
 									  		
@@ -226,3 +218,5 @@
 </body>
 </html>
 
+
+<!DOCTYPE HTML>
